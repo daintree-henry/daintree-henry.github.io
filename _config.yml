@@ -41,16 +41,16 @@ plugins:
 
 
 collections:
-  docs:
+  tekton:
     permalink: "/:collection/:path/"
     output: true
-  test:
+  sample:
     permalink: "/:collection/:path/"
     output: true
 
 just_the_docs:
   collections:
-    docs:
+    tekton:
       name: Documentation
-    test:
+    sample:
       name: Test

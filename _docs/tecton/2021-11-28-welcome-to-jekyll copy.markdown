@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "title1!"
+title:  "title2"
 date:   2021-11-28 00:57:00 +0900
 parent: TEKTON
-nav_order: 1
+nav_order: 2
 ---
 
-Hello World 1
+Hello World 2

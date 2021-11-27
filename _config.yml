@@ -51,6 +51,6 @@ collections:
 just_the_docs:
   collections:
     tekton:
-      name: Documentation
+      name: TEKTON
     sample:
-      name: Test
+      name: SAMPLE(TESTING)

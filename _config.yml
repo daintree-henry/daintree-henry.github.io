@@ -41,19 +41,16 @@ plugins:
 
 
 collections:
-  # Define a collection named "docs", its documents reside in the "_docs" directory
-  tekton:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+  test:
     permalink: "/:collection/:path/"
     output: true
 
 just_the_docs:
   collections:
-    tekton:
-      # Give the collection a name
-      name: Tekton
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      nav_exclude: false
-      # Exclude the collection from the search
-      # Supports true or false (default)
-      search_exclude: false
+    docs:
+      name: Documentation
+    test:
+      name: Test

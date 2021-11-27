@@ -29,6 +29,11 @@ title: Daintree's library
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
+aux_links:
+  "Daintree's GitHub":
+    - "//github.com/daintree-henry"
+
+
 # Build settings
 remote_theme: pmarsceill/just-the-docs
 plugins:

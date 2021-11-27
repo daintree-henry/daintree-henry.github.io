@@ -38,3 +38,22 @@ aux_links:
 remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
+
+
+collections:
+  # Define a collection named "docs", its documents reside in the "_docs" directory
+  tekton:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  collections:
+    tekton:
+      # Give the collection a name
+      name: Tekton
+      # Exclude the collection from the navigation
+      # Supports true or false (default)
+      nav_exclude: false
+      # Exclude the collection from the search
+      # Supports true or false (default)
+      search_exclude: true

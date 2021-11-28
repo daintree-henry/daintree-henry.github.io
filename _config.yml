@@ -33,7 +33,7 @@ google_fonts: "Nanum+Gothic:400,700"
 aux_links:
   "Daintree's GitHub":
     - "//github.com/daintree-henry"
-
+aux_links_new_tab: true
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs

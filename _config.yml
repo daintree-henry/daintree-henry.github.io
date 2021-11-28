@@ -28,6 +28,7 @@ title: Daintree's library
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
+google_fonts: "Nanum+Gothic:400,700"
 
 aux_links:
   "Daintree's GitHub":

@@ -44,7 +44,7 @@ collections:
   tekton:
     permalink: "/:collection/:path/"
     output: true
-  sample:
+  homekube:
     permalink: "/:collection/:path/"
     output: true
 
@@ -52,5 +52,5 @@ just_the_docs:
   collections:
     tekton:
       name: TEKTON
-    sample:
-      name: SAMPLE(TESTING)
+    homekube:
+      name: K8S CONFIG FOR HOME

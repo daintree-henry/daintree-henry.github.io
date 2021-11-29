@@ -49,8 +49,9 @@ analytics:
     tracking_id          : "G-KZY3TGT275"
     anonymize_ip         : # true, false (default)
 
-# Comments
-disqus-shortname: daintree-henry-github-io
+# Disqus Comments
+disqus:
+  shortname: daintree-henry-github-io
 
 collections:
   tekton:

@@ -8,4 +8,6 @@ comments: true
 
 Hello World
 
-{% include disqus.html %}
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}

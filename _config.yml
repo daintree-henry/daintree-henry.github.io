@@ -50,7 +50,11 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 # Comments
-disqus_shortname: daintree-henry-github-io
+comments:
+  provider: disqus
+
+  disqus:
+    disqus_shortname: daintree-henry-github-io
 
 collections:
   tekton:

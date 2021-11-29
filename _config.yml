@@ -29,7 +29,6 @@ title: Daintree's library
 # twitter_username: jekyllrb
 # github_username:  jekyll
 google_fonts: "Nanum+Gothic:400,700"
-
 color_scheme: foo
 
 aux_links:
@@ -42,6 +41,16 @@ remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 
+# Analytics
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-KZY3TGT275"
+    anonymize_ip         : # true, false (default)
+
+# Comments
+disqus_shortname: daintree-henry-github-io
 
 collections:
   tekton:

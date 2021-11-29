@@ -10,7 +10,7 @@ nav_order: 1
 - CENTOS7로 설치하였으며 리소스는 1 vCPU / 1GB RAM / 32GB Storage를 할당하였다.
 - Bastion 노드는 마스터/워커 노드의 외부 접근 및 로드밸런싱을 위한 LB를 설치할 것이다. 또한 SSH로 접근하여 Kubernetes 설치 및 명령어를 실행하는 Client 역할도 수행할 것이다.
 
-![](../_homekube/images/쿠버네티스%20개인%20서버%20구축-Bastion%20Node생성.png)
+![](/assets/images/쿠버네티스%20홈서버%20구축-Bastion%20Node생성.png)
 
 <br>
 
@@ -20,7 +20,7 @@ nav_order: 1
 NAT 네트워크가 없으면 오른쪽 +를 눌러 생성 후 톱니바퀴를 클릭
 네트워크 CIDR을 10.0.2.0/24로 설정 ->
 포트포워딩 규칙을 아래와 같이 설정
-![](../_homekube/images/쿠버네티스%20개인%20서버%20구축-버추얼박스포트포워딩.png)
+![](/assets/images/쿠버네티스%20홈서버%20구축-버추얼박스포트포워딩.png)
 
 
 Bastion Node의 IP는 10.0.2.6 고정 IP로 할당했다.

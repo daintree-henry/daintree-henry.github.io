@@ -7,3 +7,7 @@ comments: true
 ---
 
 Hello World
+
+{% if site.disqus.shortname %}
+  {% include disqus.tml %}
+{% endif %}

@@ -53,7 +53,7 @@ analytics:
 comments:
   provider: disqus
   disqus:
-    shortname: daintree-henry-github-io
+    shortname: daintree-henry.github.io
 
 collections:
   tekton:

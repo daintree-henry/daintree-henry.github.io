@@ -7,3 +7,9 @@ comments: true
 ---
 
 Hello World
+
+{% if page.comments %}
+<div id="post-disqus" class="container">
+    {% include disqus.html %}
+</div>
+{% endif %}

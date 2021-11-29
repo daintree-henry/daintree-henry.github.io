@@ -65,4 +65,4 @@ just_the_docs:
     tekton:
       name: TEKTON
     homekube:
-      name: K8S CONFIG FOR HOME
+      name: 쿠버네티스 홈서버 구축

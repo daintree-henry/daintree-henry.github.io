@@ -53,6 +53,12 @@ analytics:
 disqus-shortname : daintree-henry-github-io
 
 collections:
+  docker:
+    permalink: "/:collection/:path/"
+    output: true
+  imagekube:
+    permalink: "/:collection/:path/"
+    output: true
   tekton:
     permalink: "/:collection/:path/"
     output: true

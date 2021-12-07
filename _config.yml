@@ -62,6 +62,10 @@ collections:
 
 just_the_docs:
   collections:
+    imagekube:
+      name: 도커 기본
+    imagekube:
+      name: 그림과 예제로 배우는 쿠버네티스
     tekton:
       name: TEKTON
     homekube:

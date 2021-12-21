@@ -3,6 +3,7 @@ layout: post
 title:  "RHEL 자바 설치"
 date:   2021-11-28 00:57:00 +0900
 comments: true
+nav_order: 1
 ---
 
 ### RHEL JAVA 1.8 설치 
@@ -21,28 +22,33 @@ yum install java-1.8.0-openjdk-devel.x86_64 -y
 
 # 설치된 패키지 확인
 rpm -qa java*
-###출력
-###java-1.8.0-openjdk-headless-1.8.0.302.b08-0.el7_9.x86_64
-###javapackages-tools-3.4.1-11.el7.noarch
-###java-1.8.0-openjdk-1.8.0.302.b08-0.el7_9.x86_64
+########### 출력 시작 ###########
+java-1.8.0-openjdk-headless-1.8.0.302.b08-0.el7_9.x86_64
+javapackages-tools-3.4.1-11.el7.noarch
+java-1.8.0-openjdk-1.8.0.302.b08-0.el7_9.x86_64
+############ 출력 끝 ############
 
 # (Optional)자바 버전 확인 명령어 수행
 java -version
 javac -version
-###출력
-###openjdk version "1.8.0_302"
-###OpenJDK Runtime Environment (build 1.8.0_302-b08)
-###OpenJDK 64-Bit Server VM (build 25.302-b08, mixed mode)
-###javac 1.8.0_302
+########### 출력 시작 ###########
+openjdk version "1.8.0_302"
+OpenJDK Runtime Environment (build 1.8.0_302-b08)
+OpenJDK 64-Bit Server VM (build 25.302-b08, mixed mode)
+javac 1.8.0_302
+############ 출력 끝 ############
+
 
 # java가 설치된 폴더 확인
-JAVA_HOME=$(readlink -f /usr/bin/javac)
-###출력
-###/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.el7_9.x86_64/bin/javac
+TMP_JAVA_HOME=$(echo $(readlink -f /usr/bin/javac) | sed 's/\/bin\/javac//g')
+echo $TMP_JAVA_HOME
+########### 출력 시작 ###########
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.el7_9.x86_64
+############ 출력 끝 ############
 
 # JAVA_HOME 환경변수 추가
 cat <<EOF >> /etc/profile
-export JAVA_HOME=${JAVA_HOME}
+export JAVA_HOME=${TMP_JAVA_HOME}
 EOF
 
 source /etc/profile
